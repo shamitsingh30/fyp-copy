@@ -292,7 +292,7 @@ class DQN:
 def train(machine, e_ave, job_insert):
     d = DQN()
     Processing_time, A, D, M_num, Op_num, J, O_num, J_num, Change_cutter_time, Repair_time, EL = d.Instance_Generator(machine, e_ave, job_insert)
-    Total_tard,Total_uk_ave,Total_makespan = d.main(J_num, M_num, O_num, J, Processing_time, D, A, Change_cutter_time, Repair_time, EL, 1)
+    Total_tard,Total_uk_ave,Total_makespan = d.main(J_num, M_num, O_num, J, Processing_time, D, A, Change_cutter_time, Repair_time, EL, 0)
     tard_ave=sum(Total_tard)/d.L
     uk_ave=sum(Total_uk_ave)/d.L
     makespan_ave=sum(Total_makespan)/d.L

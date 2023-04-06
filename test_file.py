@@ -137,5 +137,5 @@ def test(machine, e_ave, job_insert, x):
     file.close()
 
 
-for i in range (6, 9, 1):
+for i in range (9):
     test(5, 30, 10, i)

@@ -662,10 +662,10 @@ class Situation:
                 for i in range(self.M_num):
                     if self.Processing_time[j][o][i] != -1:
                         s += self.Processing_time[j][o][i]
-                    try:
-                        last_mt=min(last_mt, max(self.Machines[i].End))
-                    except:
-                        last_mt+=0
+                        try:
+                            last_mt=min(last_mt, max(self.Machines[i].End))
+                        except:
+                            last_mt+=0
                 if last_mt == 99999:
                     Start_time = last_ot
                 else:
@@ -715,10 +715,10 @@ class Situation:
                 for i in range(self.M_num):
                     if self.Processing_time[j][o][i] != -1:
                         s += self.Processing_time[j][o][i]
-                    try:
-                        last_mt=min(last_mt, max(self.Machines[i].End))
-                    except:
-                        last_mt+=0
+                        try:
+                            last_mt=min(last_mt, max(self.Machines[i].End))
+                        except:
+                            last_mt+=0
                 if last_mt == 99999:
                     Start_time = last_ot
                 else:
@@ -768,10 +768,10 @@ class Situation:
                 for i in range(self.M_num):
                     if self.Processing_time[j][o][i] != -1:
                         s += self.Processing_time[j][o][i]
-                    try:
-                        last_mt=min(last_mt, max(self.Machines[i].End))
-                    except:
-                        last_mt+=0
+                        try:
+                            last_mt=min(last_mt, max(self.Machines[i].End))
+                        except:
+                            last_mt+=0
                 if last_mt == 99999:
                     Start_time = last_ot
                 else:
